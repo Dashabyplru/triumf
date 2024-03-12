@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css\normalize.css">
+	
+	<style>
+  		@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+	</style>
+</head>
+<body>
+	<div class="bg">
+		<div class="tp">
+			<div id="Triumf"> ТРИУМФ </div>
+			<div><a href="#1">О компании</a></div>
+			<div><a href="#2">Наши партнеры</a></div>
+			<div><a href="#3">Каталог продукции</a></div>
+			<div><a href="#4"> Приемущества</a></div>
+			<div><a href="#5">Контакты</a></div>
+			<div class="town">г. Нур-Султан, ул. Тлендиева 24<b>металлоцех бокс 1,2 ватсап +77071093609 телефон +77074449968</div>
+		</div>
+		<div class="metal"><b>Металлоизделия и художественная ковка</div>
+		<div class="text"> <p>Эксклюзивные предметы экстерьера, мебель, скульптура, подарки</p><p>Есть идея, а с эксклюзивом никто не может попасть в точку?</p></div>
+		<a class="button-3d">Обсудить идею -></a>
+		<div class="volna"></div>
+	</div>
+	<div class="about">
+		<div class="top" id="1">О компании</div>
+		<img src="image/picturekruk.png" class="kruk"></img>
+		<div class="text1">Наша компания работает на рынке с 2014 года. На сегодняшний день мы специализируемся на производстве металлоизделий на заказ и металлоконструкций по индивидуальным чертежам и образцам:<ul>
+		<li>художественная ковка</li>
+		<li>услуги кузнеца</li>
+		<li>сварочные работы</li>
+		<li>монтаж и демонтаж</li>
+		<li>аргонная сварка</li>
+		<li>изготовление дизайнов любой сложности</li>
+		<li>полимерное покрытие</li></ul>
+		</div>
+		<a  class="button-3d">Обсудить идею -></a>
+	</div>
+	<div class="companies">
+		<div class="partners">
+			<div>DOOR HAN</div>
+			<div>ТОО Ушаково АГРО</div>	
+			<div>ТОО "Нуртуган 2030"</div>
+		</div>
+		<div class="topline">
+			<div><img src="image/ygol_vl.png" class="ygol"></img></div>
+			<div class="top" id="2">Наши партнеры</div>
+			<div><img src="image/ygol_vp.png" class="ygol"></img></div>
+		</div>  
+		<div class="pictures">
+			<div><img src="image/kaspired.png" class="kaspired"></img></div>
+			<div class="qrandparents">
+				<div class="pensia">Cкидки пенсионерам</div>
+				<div><img src="image/grandparents.png" class="picgrand"></img></div>
+			</div>
+		</div>
+		</div>	
+	<div class="catalog">
+		<div class="top" id="3">Каталог продукции</div>
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<div class="text2">Перила</div>
+			    <div><img  src="image/Перила.png" style="height: 80vh; padding: 1vh; "></div>
+ 			</div>
+			<div class="mySlides fade">
+				<div class="text2">Ограждения</div>
+			    <div><img  src="image/Ограждения.png" style="height: 80vh; padding: 1vh; "></div>
+			</div>
+			<div class="mySlides fade">
+				<div class="text2">Навесы</div>
+			    <div><img  src="image/Навесы.png" style="height: 80vh; padding: 1vh; "></div>
+			  </div>
+			  <div class="mySlides fade">
+			  	<div class="text2">Решетки</div>
+			    <div><img  src="image/Решетки.png" style="height: 80vh; padding: 1vh; "></div>	    
+			  </div>
+			  <div class="mySlides fade">
+			  	<div class="text2">Беседки</div>
+			    <div><img src="image/Беседки.png" style="height: 80vh; padding: 1vh; "></div>
+			  </div>
+			  <div class="mySlides fade">
+			  	<div class="text2">Лестницы</div>
+			    <div><img src="image/Лестницы.png" style="height: 80vh; padding: 1vh; "></div>
+			  </div>
+			  <div class="mySlides fade">
+			  	<div class="text2">Входная группа</div>
+			    <div><img src="image/Входная группа.png" style="height: 80vh; padding: 1vh; "></div>
+			  </div>
+			  <div class="mySlides fade">
+			  	<div class="text2">Мангалы</div>
+			    <div><img src="image/Мангалы.png" style="height: 80vh; padding: 1vh; "></div>
+			  </div>
+			  <div class="mySlides fade">
+				<div class="text2">Другое</div>
+			    <div><img  src="image/Другое.png" style="height: 80vh; padding: 1vh;"></div>
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+			</div>
+			<script >
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  let i;
+			  let slides = document.getElementsByClassName("mySlides");
+			  let dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+			    slides[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			    dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " active";
+			}
+			</script>
+	</div>
+	<div class="premium">
+		<div ><img class="topv" src="image/Vector.png"></img></div> 
+		<div class="top" id="4">Наши преимущества</div>
+		<div class="cartinki">
+			<div class="opacity">
+				<div><img src="image/time.png"></img></div>
+				<div class="text3_1">Оперативность</div>
+			</div>
+			<div class="opacity">
+				<div><img src="image/dollar.png"></img></div>
+				<div class="text3">Низкие цены</div>
+			</div>
+			<div class="opacity">
+				<div><img src="image/galochka.png"></img></div>
+				<div class="text3">Качество</div>
+			</div>	
+		</div>
+		<div><img class="bottomv" src="image/Vector n.png"></img></div>
+	</div>
+	<div id="contacts" style="background-color: #181715; height: 100vh;">
+		<div class="top" id="5">Контакты</div>
+		<div class="yandex">
+			<div style="font-family: 'Comfortaa', sans-serif;font-size: 2.4vw;color:white;padding-top: 3vh;text-align: center;padding-left:3vw;margin-bottom: 2vh;">г. Нур-Султан, ул. Тлендиева 24<b> металлоцех бокс 1,2<b>ватсап +77071093609<b>телефон +77074449968</h3></div>
+			<p class="maps" align="center"><iframe  src="https://yandex.ru/map-widget/v1/?um=constructor%3A6e9f32890155830ece8aa05ddd81dfad91c24601cc865701675c1cce2b684231&amp;source=constructor"   width="600" height="450" left="1000" frameborder="0"></iframe></p>
+		</div>
+	</div>
+
+
+</body>
+</html>
